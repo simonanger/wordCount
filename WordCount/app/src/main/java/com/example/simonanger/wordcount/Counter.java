@@ -7,6 +7,7 @@ package com.example.simonanger.wordcount;
 public class Counter {
     public static int countWords(String input)
     {
+
         return input.split(" ").length;
     }
 }
