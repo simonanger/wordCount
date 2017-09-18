@@ -27,6 +27,6 @@ public class WordCountHome extends AppCompatActivity {
     public void onButtonClicked(View button) {
         int numberOfWords = Counter.countWords(inputEditText.getText().toString());
         resultText.setText("There are " + String.valueOf(numberOfWords)
-                + " number of words in that sentence.");
+                + " words in that sentence.");
     }
 }
