@@ -5,10 +5,13 @@ package com.example.simonanger.wordcount;
  */
 
 public class Counter {
-    public static int countWords(String input)
-    {
-
-        return input.split(" ").length;
+    public static int countWords(String input) {
+        if (input.trim().isEmpty() || input == null ) {
+            return 0;
+        }
+        String[] arrayOfWords = input.trim().split(" ");
+        int numberofWords = arrayOfWords.length;
+        return numberofWords;
     }
 }
 
